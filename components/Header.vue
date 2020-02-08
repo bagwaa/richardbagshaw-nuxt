@@ -1,6 +1,8 @@
 <template>
-  <div class="header">
-    <h1>Header Content</h1>
+  <div>
+    <h3 class="text-5xl mb-4">
+      > Richard Bagshaw
+    </h3>
     <NavigationBar />
   </div>
 </template>
