@@ -18,6 +18,12 @@ export default {
     Header,
     Footer
   },
+  mounted() {
+    this.toggleBodyClass('addClass', 'bg-black')
+  },
+  destroyed() {
+    this.toggleBodyClass('removeClass', 'bg-black')
+  },
   methods: {
     toggleBodyClass(addRemoveClass, className) {
       const el = document.body
@@ -28,12 +34,6 @@ export default {
         el.classList.remove(className)
       }
     }
-  },
-  mounted() {
-    this.toggleBodyClass('addClass', 'bg-black')
-  },
-  destroyed() {
-    this.toggleBodyClass('removeClass', 'bg-black')
   }
 }
 </script>
